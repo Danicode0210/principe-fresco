@@ -1,0 +1,14 @@
+{
+    "products": [
+      {
+        "name": "nombre del item",
+        "id": 1,
+        "description": "t-shirt colta",
+        "category": "t-shirts",
+        "price": 10000,
+        "image": ["img1", "img2", "url3"],
+        "size": ["s","m","l","xl","xxl"],
+        "qtySize": [4,5,7,8,10]
+      }
+    ]
+  }
