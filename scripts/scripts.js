@@ -7,7 +7,8 @@ const getProducts = async (url) => {
 
 const showAllProducts = async () => {
     let res = await getProducts(SERVER_DATA_URL)
-    // cardsParent.innerHTML = ''
+    //cleaning cards.
+    cardsParent.innerHTML = ''
     console.log(res.data)
     res.data.forEach(product => {
        cardsParent.innerHTML += `
