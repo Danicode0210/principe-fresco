@@ -1,4 +1,4 @@
-const SERVER_DATA_URL = 'http://localhost:4000/products'
+const SERVER_DATA_URL = 'https://principe-json-serv.herokuapp.com/products'
 const cardsParent = document.getElementById('cardsParent')
 
 const getProducts = async (url) => {
