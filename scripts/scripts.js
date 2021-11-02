@@ -1,3 +1,7 @@
+const clickme = (smallImg) =>{
+    let fullImg = document.getElementById('imagebox')
+    fullImg.src = smallImg.src
+}
 const SERVER_DATA_URL = 'http://localhost:4000/products'
 const cardsParent = document.getElementById('cardsParent')
 
