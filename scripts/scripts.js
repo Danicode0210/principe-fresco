@@ -12,9 +12,10 @@ const showAllProducts = async () => {
     console.log(res.data)
     res.data.forEach(product => {
        cardsParent.innerHTML += `
-       <div id="${product.id}" class="card-template">
+       <div class="card-template">
             <div class="col">
                 <div class="card text-center shadow">
+                    <a id="${product.id}"  href="#" class="stretched-link"></a>
                     <img id="imgCard" src="${product.image[0]}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 id="productName" class="card-title">${product.name}</h5>
@@ -29,4 +30,11 @@ const showAllProducts = async () => {
 
 document.addEventListener('DOMContentLoaded', () => {
     showAllProducts()
+})
+
+//saving ID to localstorage
+cardsParent.addEventListener('click', evt => {
+    localStorage.setItem('idDetail', evt.target.id)
+    console.log(evt.target.id)
+    window.location.href = 'product.html'
 })
