@@ -132,6 +132,9 @@ input{
     width: 90%;
     margin: 0 auto 40px;
 }
+.related h2{
+    text-align: center;
+}
 .related .row{
     width: 100%;
     height: auto;
