@@ -7,7 +7,7 @@
       "category": "t-shirts",
       "price": 10000,
       "image": [
-        "img1",
+        "./IMGS/img1.png",
         "img2",
         "url3"
       ],

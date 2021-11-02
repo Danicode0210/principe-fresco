@@ -4,3 +4,8 @@
 .btn-product{
     background: #ff7a50 !important;
 }
+/* zoom effect when hover */
+
+.card-template:hover {
+    transform: scale(1.02);
+}
