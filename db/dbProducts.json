@@ -1,14 +1,36 @@
 {
-    "products": [
-      {
-        "name": "nombre del item",
-        "id": 1,
-        "description": "t-shirt colta",
-        "category": "t-shirts",
-        "price": 10000,
-        "image": ["img1", "img2", "url3"],
-        "size": ["s","m","l","xl","xxl"],
-        "qtySize": [4,5,7,8,10]
-      }
-    ]
-  }
+  "products": [
+    {
+      "name": "nombre del item",
+      "id": 1,
+      "description": "t-shirt colta",
+      "category": "t-shirts",
+      "price": 10000,
+      "image": [
+        "./IMGS/img1.png",
+        "img2",
+        "url3"
+      ],
+      "size": [
+        "s",
+        "m",
+        "l",
+        "xl",
+        "xxl"
+      ],
+      "qtySize": [
+        4,
+        5,
+        7,
+        8,
+        10
+      ]
+    },
+    {
+      "name": "Blusa",
+      "price": "1500000",
+      "image": "https://i.ibb.co/SP3Lhy0/shopping.png",
+      "id": 2
+    }
+  ]
+}
