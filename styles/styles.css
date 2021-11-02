@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -156,3 +157,16 @@ button{
 
 
 
+=======
+.img-logo{
+    max-width: 8em;
+}
+.btn-product{
+    background: #ff7a50 !important;
+}
+/* zoom effect when hover */
+
+.card-template:hover {
+    transform: scale(1.02);
+}
+>>>>>>> 66d2344818816b57409dcec7115d983c58a4e106
