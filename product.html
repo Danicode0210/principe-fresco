@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Principe Fresco | Producto</title>
 </head>
@@ -20,10 +21,11 @@
 
     <nav class="navbar navbar-light bg-light d-flex">
         <div class="container-fluid justify-content-around">
-            <a class="navbar-brand" href="./index.html"><img src="./images/Príncipe fresco.png" alt="logo" class="img-logo"></a>
+            <a class="navbar-brand" href="./index.html"><img src="./images/Príncipe fresco.png" alt="logo"
+                    class="img-logo"></a>
             <div class="">
                 <ul class="list-unstyled  d-flex">
-                    <li class="col-7"><a href="./index.html">SHOP</a></li>
+                    <li class="col-7"><a class="text-decoration-none" href="./index.html">SHOP</a></li>
                     <li class="col">COLLECTIONS</li>
                 </ul>
             </div>
@@ -72,7 +74,9 @@
                             <button type="submit" class="btn btn-primary">Guardar Producto</button>
                         </div>
                     </form>
-
+                </div>
+            </div>
+        </div>
     </nav>
 
 
@@ -84,10 +88,9 @@
                 <div class="slider">
 
                     <div class="product">
-                        <img src="./images/Rectangle 1.png" alt="" onclick="clickme(this)">
-                        <img src="./images/Rectangle 2.png" alt="" onclick="clickme(this)">
-                        <img src="./images/Rectangle 3.png" alt="" onclick="clickme(this)">
-                        <img src="./images/Rectangle 4.png" alt="" onclick="clickme(this)">
+                        <img id="img1" src="./images/Rectangle 1.png" alt="" onclick="clickme(this)">
+                        <img id="img2" src="./images/Rectangle 2.png" alt="" onclick="clickme(this)">
+                        <img id="img3" src="./images/Rectangle 3.png" alt="" onclick="clickme(this)">
                     </div>
 
 
@@ -102,9 +105,9 @@
 
                 <div class="content">
 
-                    <h2>Crown Sweatshirt</h2>
+                    <h2 id="itemName">Crown Sweat</h2>
 
-                    <h3>$80.00</h3>
+                    <h3 id="itemPrice">$80.00</h3>
 
                     <div class="rating">
                         <i class="fa fa-start"></i>
@@ -125,11 +128,13 @@
                         </button>
                     </div>
 
-                    <h4>Let them know your're 90's royalty with this official The Fresh Prince crown pattern sweater.
+                    <h4 id="itemDescription">Let them know your're 90's royalty with this official The Fresh Prince
+                        crown pattern sweater.
                         Throw vintage vibes that Uncle Phil would approve of. Featuring woven the Fresh Prince logo on
                         chest. Navy crown print crew neck sweatshirt with white ribbed collar and waist band.
                         Cotton/Poly blend</h4>
 
+                        <!-- actualizar este anchor por botones -->
                     <a href="">Click for Sizing</a>
 
                 </div>
@@ -142,11 +147,11 @@
             <div class="row">
                 <div class="columns">
                     <div class="items">
-                        <img src="./images/Rectangle 5.png" alt="">
+                        <img id="recomendedImg1" src="./images/Rectangle 5.png" alt="">
                         <div class="details">
-                            <p>Fresh Stripe Sweater</p>
+                            <p id="recomendedName1">Fresh</p>
 
-                            <p>$85.00</p>
+                            <p id="recomendedPrice1">$85.00</p>
 
                         </div>
                     </div>
@@ -154,11 +159,11 @@
 
                 <div class="columns">
                     <div class="items">
-                        <img src="./images/Rectangle 6.png" alt="">
+                        <img id="recomendedImg2" src="./images/Rectangle 6.png" alt="">
                         <div class="details">
-                            <p>Fresh Black Tie-Dye Hoodie</p>
+                            <p id="recomendedName2">Fresh Black Tie-Dye Hoodie</p>
 
-                            <p>$75.00</p>
+                            <p id="recomendedPrice2">$75.00</p>
 
                         </div>
                     </div>
@@ -166,12 +171,12 @@
 
                 <div class="columns">
                     <div class="items">
-                        <img src="./images/Rectangle 7.png" alt="">
+                        <img id="recomendedImg3" src="./images/Rectangle 7.png" alt="">
 
                         <div class="details">
-                            <p>Pose For it Tee</p>
+                            <p id="recomendednName3">Pose For it Tee</p>
 
-                            <p>$45.00</p>
+                            <p id="recomendedPrice3">$45.00</p>
                         </div>
                     </div>
                 </div>
