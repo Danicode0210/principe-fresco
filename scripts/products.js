@@ -1,5 +1,10 @@
+const SERVER_DATA_URL = 'https://principe-json-serv.herokuapp.com/products'
 
-const SERVER_DATA_URL = 'http://localhost:4000/products'
+const clickme = (smallImg) =>{
+    let fullImg = document.getElementById('imagebox')
+    fullImg.src = smallImg.src
+}
+
 
 /* MÉTODO POST */
 let formulario = document.getElementById('form')
@@ -22,5 +27,3 @@ formulario.addEventListener('submit', async (e) => {
         }
     })
 })
-
-

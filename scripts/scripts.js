@@ -1,8 +1,4 @@
-const clickme = (smallImg) =>{
-    let fullImg = document.getElementById('imagebox')
-    fullImg.src = smallImg.src
-}
-const SERVER_DATA_URL = 'http://localhost:4000/products'
+const SERVER_DATA_URL = 'https://principe-json-serv.herokuapp.com/products'
 const cardsParent = document.getElementById('cardsParent')
 
 const getProducts = async (url) => {
@@ -15,7 +11,7 @@ const showAllProducts = async () => {
     cardsParent.innerHTML = ''
     console.log(res.data)
     res.data.forEach(product => {
-       cardsParent.innerHTML += `
+        cardsParent.innerHTML += `
        <div class="card-template">
             <div class="col">
                 <div class="card text-center shadow">
@@ -39,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
 //saving ID to localstorage
 cardsParent.addEventListener('click', evt => {
     localStorage.setItem('idDetail', evt.target.id)
-    console.log(evt.target.id)
-    window.location.href = 'product.html'
+    if(evt.target.tagName === 'A') {
+        window.location.href = 'product.html'
+    }
 })
