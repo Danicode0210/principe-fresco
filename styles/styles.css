@@ -14,6 +14,15 @@
     align-items: center;
     justify-content: space-between;
 }
+.rowhome{
+    width: 90%;
+    height: 85vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .col{
     flex-basis: 45%;
 }
