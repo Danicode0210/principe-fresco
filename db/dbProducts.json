@@ -27,30 +27,10 @@
       ]
     },
     {
-      "name": "nombre del item2",
-      "id": 2,
-      "description": "t-shirt colta2",
-      "category": "t-shirts2",
-      "price": 99000,
-      "image": [
-        "./IMGS/img2.png",
-        "img2",
-        "url3"
-      ],
-      "size": [
-        "s",
-        "m",
-        "l",
-        "xl",
-        "xxl"
-      ],
-      "qtySize": [
-        4,
-        5,
-        7,
-        8,
-        10
-      ]
+      "name": "Blusa",
+      "price": "1500000",
+      "image": "https://i.ibb.co/SP3Lhy0/shopping.png",
+      "id": 2
     }
   ]
 }
